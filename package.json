@@ -1,0 +1,60 @@
+{
+    "name": "card_game",
+    "version": "0.1.0",
+    "license": "UNLICENSED",
+    "scripts": {
+        "start": "DISABLE_ESLINT_PLUGIN=true craco start",
+        "build": "DISABLE_ESLINT_PLUGIN=true craco build",
+        "analyze": "source-map-explorer 'build/static/js/*.js' --html > report.html",
+        "test": "run-s eslint:check prettier:check jest",
+        "jest": "craco test --env=jsdom",
+        "eject": "react-scripts eject",
+        "serve": "npx serve build",
+        "eslint:check": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+        "prettier:write": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,md,css,scss}\"",
+        "prettier:check": "prettier --list-different \"src/**/*.{js,jsx,ts,tsx,json,md,css,scss}\"",
+        "cypress": "cypress open",
+        "cypress:headless": "cypress run --browser chrome --headless",
+        "test:e2e": "start-server-and-test 'yarn start' 3000 'yarn cypress'",
+        "test:e2e:ci": "start-server-and-test 'yarn start' 3000 'yarn cypress:headless'"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 10",
+        "not op_mini all"
+    ],
+    "dependencies": {
+        "@craco/craco": "^6.4.1",
+        "add": "^2.0.6",
+        "framer-motion": "^5.3.2",
+        "lodash": "^4.17.21",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-dom-confetti": "^0.2.0",
+        "use-sound": "^4.0.1",
+        "yarn": "^1.22.17"
+    },
+    "devDependencies": {
+        "@testing-library/cypress": "^8.0.2",
+        "@testing-library/jest-dom": "^5.15.1",
+        "@testing-library/react": "^12.1.2",
+        "@testing-library/react-hooks": "^7.0.2",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/jest": "^26.0.23",
+        "@types/lodash": "^4.14.178",
+        "@types/react": "^17.0.4",
+        "@types/react-dom": "^17.0.3",
+        "@types/react-test-renderer": "^17.0.1",
+        "autoprefixer": "^9",
+        "cypress": "^9.1.0",
+        "cypress-localstorage-commands": "^1.6.1",
+        "postcss": "^7",
+        "react-scripts": "^4.0.3",
+        "react-test-renderer": "^17.0.2",
+        "source-map-explorer": "^2",
+        "start-server-and-test": "^1.14.0",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+        "typescript": "^4.2.4"
+    }
+}
