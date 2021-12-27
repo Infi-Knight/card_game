@@ -1,6 +1,6 @@
 # Card game
 
-[Demo](https://epic-swartz-5a550e.netlify.app/)
+[Demo](https://blissful-bohr-58acd4.netlify.app/)
 
 ## Rules
 
