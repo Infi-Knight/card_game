@@ -1,6 +1,11 @@
 # Card game
 
-[Demo](https://blissful-bohr-58acd4.netlify.app/)
+[Play now](https://blissful-bohr-58acd4.netlify.app/)
+
+
+
+https://user-images.githubusercontent.com/20504781/147483012-b8d7b84e-ce1f-47f1-b838-423a21643314.mp4
+
 
 ## Rules
 
